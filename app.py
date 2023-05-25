@@ -1,61 +1,33 @@
-import turtle
+import turtle as t
 import colorsys as ss
+import time
+import random as rn
 
-b = turtle.Turtle()
-b.speed(-2)
-turtle.bgcolor("black")
-c = 0
-li = ["red", "blue", "yellow", "coral", "cyan", "linen"]
+t.bgcolor("black")
 
-# for a in range(120):
-#     b.color("steelblue")
-#     b.forward(c)
-#     b.left(60)
-#     b.circle(100, a)
-#     b.backward(1)
-#     b.right(1)
-#     c += 1
+li = [t.Turtle(), t.Turtle()]
+f = li[0]
+s = li[1]
 
+for i in li:
+    i.speed(0)
+    i.width(.5)
+    i.shape("arrow")
+    i.color("white", "black")
 
-# turtle.mainloop()
+f.pu()
+f.bk(200)
+f.pd()
 
-class method():
-    def __init__(self):
-        self.col = ["red", "blue", "yellow", "coral", "cyan", "linen"]
-        self.uni = ss.hsv_to_rgb(13, 151, 142)
-
-    def draw(self):
-        b.penup()
-        b.goto(20, 0)
-        b.pendown()
-        for num in range(60):
-            b.color(self.col[1])
-            for nun in range(6):
-                b.forward(100)
-                b.circle(20, 60.0)
-            b.color(self.col[4])
-            b.begin_fill()
-            b.circle(50, 6)
-            b.end_fill()
-
-    def write(self):
-        # just messing around with turtle
-        n = 100
-        for num in range(10):
-            def shap(par):
-                b.forward(par)
-                b.left(90)
-                b.forward(par)
-                b.left(90)
-                b.forward(par)
-                b.left(90)
-                b.color(self.col[num % 4])
-            shap(n)
-            b.right(1)
-            # b.backward(2)
-            # n += 1
+for a in range(4):
+    for b in range(80):
+        f.fd(5)
+        s.color(ss.hsv_to_rgb(b/80, 0.787, 1))
+        s.goto(f.pos())
+        s.pu()
+        s.goto(0, 0)
+        s.pd()
+    f.lt(90)
 
 
-met = method()
-# met.draw()
-met.write()
+time.sleep(10)

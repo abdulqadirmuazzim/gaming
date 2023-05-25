@@ -1,0 +1,5 @@
+(s)|{"appid":"9e400caa-80d7-4696-9a2b-57c99181a16d","userid":"82ed341b17e2ca766828a54cc43aa148","sessionid":6059162152268263439,"platform":"AndroidPlayer","platformid":11,"sdk_ver":"u2020.3.33f1","sdk_rev":"915a7af8b0d5","session_count":285,"localprojectid":"6ce820929f8527b4798eb3ddc4fdc3d4","build_guid":"11a9aaf2f0d6ce54a94bb827f169145a","deviceid":"0ddd59fa554134ae76204927cd9f9b55","identity_token":"82ed341b17e2ca766828a54cc43aa148"}
+(g)|2
+{"type":"analytics.custom.v1","msg":{"custom_params":{"AppVersion":"1.65.1","EngineVersion":"2020.3.33f1"},"ts":1675510622487,"t_since_start":3468110,"name":"AppStarting"}}
+{"type":"analytics.custom.v1","msg":{"custom_params":{"level_index":9,"score":201600,"character":1},"ts":1675510867051,"t_since_start":248032131,"name":"game_over"}}
+(1){"type":"analytics.appPause.v1","msg":{"ts":1675510876630,"t_since_start":257611209}}

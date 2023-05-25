@@ -2,5 +2,5 @@
 
 
 body {
-    color: rgb(12, 151, 142);
+    color: hsl(blue, color, lightness);
 }
